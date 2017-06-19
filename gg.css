@@ -1,0 +1,40 @@
+body{
+	background-color: #F5F5DC;
+}
+p{
+	text-indent: 2em;
+}
+small{
+	color: #383;
+}
+/*标题背景图部分*/
+.head-h2{
+	text-align: center;
+	background-image: url('picture/head3.jpg');
+	border-radius: 5px;
+	color: #886;
+}
+.head-sp1,.head-sp2{
+	position: relative;
+}
+.head-sp1{
+	left: -1000px;
+}
+.head-sp2{
+	top: -500px;
+}
+.head-sp3,.head-sp4,.head-sp5{
+	position: relative;
+}
+/*标题背景图结束*/
+
+/*导航部分*/
+.head-nav{
+	background-color: #e9e4d8;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.dropdown-a{
+	font-size: 0.9em;
+}
+/*导航结束*/

@@ -1,0 +1,30 @@
+#register{
+	text-align: center;
+}
+/*验证码*/
+.validate-span{
+	display: inline-block;
+	background-color: #575757;
+	color: #CD8162;
+	height: 2.5em;
+	line-height: 2.5em;
+	border-radius: 3px;
+	width: 100%;
+	font-family: '隶书';
+}
+/*错误提示*/
+.name-sp,.password-sp,.validate-sp{
+	position: relative;
+	top: -0.5em;
+}
+.register-sp{
+	line-height: 2em;
+	text-align: left;
+}
+.pass-ul{
+	padding: 0;
+}
+.pass-ul li{
+	width: 100%;
+	display: none;
+}

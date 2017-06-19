@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>前端信息站</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content='width=device-width,initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content="IE=Edge">
+	<link href="http://cdn.gbtags.com/twitter-bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="gg.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header class="container-fluid">
+		<!-- 网站标题LOGO -->
+		<div class="row clearfix">
+			<div class="col-xs-12 head-h2" id="headDiv">
+				<h2>
+				<span class="head-sp1" id="headSp1">前</span>
+				<span class="head-sp2" id="headSp2">端</span>
+				<span class="head-sp3" id="headSp3">信</span>
+				<span class="head-sp4" id="headSp4">息</span>
+				<span class="head-sp5" id="headSp5">站</span>
+				</h2>
+			</div>
+		</div>
+		<!-- 导航 -->
+		<div class="row clearfix">
+			<nav class="col-sm-9 column head-nav">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						 <a href="index.html">首页</a>
+					</li>
+					<li>
+						 <a href="#">网站简介</a>
+					</li>
+					<li>
+						 <a href="#">信息</a>
+					</li>
+					<!-- 下拉菜单 -->
+					<li class="dropdown">
+						 <a href="#" data-toggle="dropdown" class="dropdown-toggle dropdown-a">更多<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li>
+								<label for="">CSS框架</label>
+							</li>
+							<li>
+								 <a href="#"></a>
+							</li>
+							</li>
+							<li class="divider">
+							</li>						
+							<li>
+								<label for="">JavaScript框架</label>
+							<li>
+								 <a href="#"></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- 注册登录 -->
+			<ul class="nav nav-tabs col-sm-3 head-nav" id="loginUl">
+				<li id="modalLi">
+					<a data-toggle="modal" data-target="#myModal">
+						<span class="glyphicon glyphicon-user"></span>
+						<span>登陆</span>
+					</a>
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content" id="modalContent">
+								<!-- 调整大小和水平位置 -->
+								<div class="col-sm-2"></div>
+								<div class="col-sm-8 modal-inner">
+									<div class="modal-header col-sm-12">
+										<!-- 关闭按钮 -->
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+										</button>
+										<h4 class="modal-title" id="myModalLabel">
+											欢迎登陆
+										</h4>
+									</div>
+									<div class="modal-body col-sm-12">
+										<!-- 登录表单 -->
+										<form action="" class="form-horizontal" role="form" id="loginForm">
+										 	<div class="form-group">
+										    	<label for="userName" class="col-sm-3 control-label">
+										    		账 号
+										    	</label>
+										    	<div class="col-sm-8">
+										      		<input type="text" class="form-control" id="userName" placeholder="请输入账号">
+										   		 </div>
+										  	</div>
+										  	<span id="nameSp" class="name-sp"></span>
+										  	<div class="form-group">
+										   		 <label for="password" class="col-sm-3 control-label">
+										   		 	密 码
+										   		 </label>
+										   		 <div class="col-sm-8">
+										     		 <input type="password" class="form-control" id="password" placeholder="请输入密码">
+										    	</div>
+										 	</div>
+										 	<span id="passwordSp" class="password-sp"></span>		
+										  	<div class="form-group">
+										   		 <label for="validateValue" class="col-sm-3 control-label">验证码
+										   		 </label>
+										   		 <div class="col-sm-8">
+											   		<span class="validate-span" id="validateSpan">
+														<span id="validateSpan1"></span>
+														<span id="validateSpan2"></span>
+														<span id="validateSpan3"></span>
+														<span id="validateSpan4"></span>
+											    	</span>			
+										     		<input type="text" class="form-control" id="validateValue" placeholder="请输入验证码">
+										    	</div>
+										 	</div>
+										 	<span id="validateSp" class="validate-sp"></span>
+										  	<div class="form-group pull-right col-sm-11">
+										      	<button type="button" class="btn btn-default" id="loginBtn">
+										      		登 录
+										      	</button>
+										      	<a href="">没有账号？</a>
+										      	<a href="">忘记密码？</a>
+										 	</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+									</div>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+						</div>
+					</div>			
+				</li>
+				<li>
+					<a href="zhuce.html">
+						<span class="glyphicon glyphicon-plus-sign"></span>
+						<span>注册</span>
+					</a>					
+				</li>
+			</ul>
+			<ul class="user-ul nav nav-tabs col-sm-3 head-nav" id="userUl">	
+				<li>
+					<a>
+						<span class="glyphicon glyphicon-user"></span>
+						<span>用户中心</span>
+					</a>
+				</li>
+				<li id="unlogin">
+					<a>
+						<span class="glyphicon glyphicon-share"></span>
+						<span>注销登录</span>
+					</a>
+				</li>
+			</ul>								
+		</div>
+	</header>	
+	<div class="container">		
+		<!-- 概述和前沿 -->
+		<div class="row clearfix">
+			<div class="col-md-3 column">
+				<div class="tabbable" id="tabs-730255">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							 <a href="#panel-491696" data-toggle="tab">HTML概述</a>
+						</li>
+						<li>
+							 <a href="#panel-262711" data-toggle="tab">HTML前沿</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="panel-491696">		
+							<div class="img-div">
+								<img src="picture/html.jpg" alt="" class="img-responsive html-img">
+							</div>
+							<h3>HTML是什么</h3>
+							<p>
+								html是一种超文本标记语言！
+							</p>
+							<p>
+								什么是超文本，超文本的含义就是内容超过了文本的范畴，可以包含图片、链接、音频、视频等等。
+								而我们平时浏览的网页不就恰好包含了这些元素么，所以html一般被用来写网页内容与结构。
+							</p>
+							<p>
+								那么标记又是什么意思呢？如上所说超文本既然包括了那么多的内容，那如何区别这些内容就成了问题，于是便需要对不同的内容做标记，所以html定义了各种标签（元素），并且通过标签（元素）来标记以区分超文本内容。
+							</p>
+							<p>
+								回到问题本身，html其实就是一种通过标签（元素）来标记内容的语言。
+								<small>注：很多时候，大家会把标签称呼为元素。</small>
+							</p>
+						</div>
+						<div class="tab-pane" id="panel-262711">
+							<div class="img-div">
+								<img src="picture/html.jpg" alt="" class="img-responsive html-img">
+							</div>
+							<h3>HTML新动向</h3>						
+							<p>
+								HTML经过不断发展和更新，目前已经发展到了HTML5版本。HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。
+							</p>
+							<p>
+								HTML5是目前最流行的网页编写语言，它有着强大的兼容性，支持跨平台跨设备的页面，极大的降低了开发与运营的成本。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 column">
+				<div class="tabbable" id="tabs-5697">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							 <a href="#panel-871485" data-toggle="tab">CSS概述</a>
+						</li>
+						<li>
+							 <a href="#panel-699776" data-toggle="tab">CSS前沿</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="panel-871485">
+							<div class="img-div">
+								<img src="picture/css.jpg" alt="" class="img-responsive html-img">
+							</div>
+							<h3>CSS是什么</h3>
+							<p>
+								CSS是层叠样式表！
+							</p>
+							<p>
+								我们先说样式，页面内容用HTML写好后，下一步当然是对页面进行布局美化，例如字体、颜色、间距、背景、边框等等都需要调整。CSS恰好可做这些事情，并且因为CSS可以精确到像素单位，所以它在布局美化这方面可以做得非常nice。
+							</p>
+							<p>
+								我们经常会需要写一些较复杂的样式，此时就会面临一个问题，当同一元素的同一属性有多个样式时，到底哪个样式会生效？
+							</p>
+							<p>	
+								为解决上面的问题，开发者定义了生效规则--层叠。
+								层叠:同一元素的同一属性的不同样式会从前到后一层层叠起来，而只有叠在最上面（最后写的）的样式才会生效，下面的则被覆盖。
+							</p>
+							<p>
+								层叠规则不仅避免了样式冲突，同时也减少了后期的维护成本。
+								当然CSS还有很多优点，比如：独立于HTML文件，将网页内容与外观分离，代码可以重用等等。	
+							</p>
+							<p>
+								回到问题本身，CSS其实就是一种按层叠规则设置页面样式的语言。
+							</p>
+						</div>
+						<div class="tab-pane" id="panel-699776">
+							<div class="img-div">
+								<img src="picture/css.jpg" alt="" class="img-responsive html-img">
+							</div>
+							<h3>CSS新动向</h3>
+							<p>
+								CSS经过不断发展和更新，目前已经发展到了CSS3版本。
+							</p>
+							<p>
+							随着 Web2.0 技术的流行，之前的 CSS2 标准和技术已经满足不了日益增长的开发需求,人们需要实现更加美观、用户体验更好的界面。CSS3这个新一代的标准应运而生。
+							</p>
+							<p>
+							它提供了一系列强大的功能，比如各种字体、渐变、特效、动画等等。这些新特性在现阶段是非常强大的，您只需要加入几行简单的 CSS3代码便可以实现出一系列令人眼前一亮的效果，这比我们之前用 JavaScript 去模拟这样的效果要好得多，不仅降低了复杂度，变得易维护，在性能上也突飞猛进。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 column">
+				<div class="tabbable" id="tabs-223672">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							 <a href="#panel-788287" data-toggle="tab">Javascrip概述</a>
+						</li>
+						<li>
+							 <a href="#panel-827485" data-toggle="tab">Javascript前沿</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="panel-788287">
+							<div class="img-div">
+								<img src="picture/js1.jpg" alt="" class="img-responsive html-img">
+							</div>
+							<h3>JavaScript是什么</h3>
+							<p>
+								JavaScript是一种直译式脚本语言！
+							</p>
+							<p>
+								所谓直译式就是说其代码不需要进行预编译。JavaScript的解释器引擎被各大浏览器内置，所以它的代码可以直接在浏览器上运行。这使得代码可以很轻松的跨平台跨设备运行，这种兼容性也让JavaScript成为了最热门编程语言之一。
+							</p>
+							<p>	
+								当我们把内容和样式都写好时，一个漂亮的静态页面出来了，接下来当然是给页面添加交互、互动功能，让静态的页面动起来，这样不仅可以让页面看上去变得更加高端，还可以让用户主动参与进来，当然增加互动的好处远不止这些。
+							</p>
+							<p>
+								当你明白了页面增加交互、互动的重要性后，我是不会告诉你JavaScript就是用来实现交互、互动功能的。
+							</p>
+							<p>
+								回到问题本身，JavaScript是一种可以直接在浏览器环境下运行的脚本语言，主要用来实现网页交互功能。
+							</p>
+						</div>
+						<div class="tab-pane" id="panel-827485">
+							<div class="img-div">
+								<img src="picture/js1.jpg" alt="" class="img-responsive html-img">
+							</div>
+							<h3>JavaScript新动向</h3>
+							<p>
+								目前JavaScript是最流行的编程语言之一，未来发展前景广阔，JavaScript有着大量成熟的框架库，比如：JQuery、BootStrap、AngularJS、ReactJS、Node.JS等。
+							</p>
+							<p>
+								目前JavaScript的最新版本为ES6，ES6增加了许多新特性，在语法上也有一些改进，未来有可能会成为主流，不过目前大多数编程依然使用的ES5标准。<small>注：ES是ECMAScript的简称，ECMAScript是JavaScript的通用标准，同理JavaScript一般被简称为JS。</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 图片轮播 -->
+		<div class="row clearfix">
+			<h3>精品图书推荐</h3>
+			<div class="column col-md-4 book-div">
+				<div class="carousel slide" id="carousel-279086" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#carousel-279086">
+						</li>
+						<li data-slide-to="1" data-target="#carousel-279086">
+						</li>
+						<li data-slide-to="2" data-target="#carousel-279086">
+						</li>
+					</ol>
+					<div class="carousel-inner" id="imgDiv">
+						<div class="item active">
+							<img alt="" src="picture/dom2.jpg" class="img-responsive"title="JavaScript DOM编程艺术（第二版）">
+							<div class="carousel-caption">
+								<h4>
+									JavaScript DOM编程艺术（第二版）
+								</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="picture/gaoji33.jpg" class="img-responsive" title="JavaScript 高级程序设计（第三版）">
+							<div class="carousel-caption">
+								<h4>
+									JavaScript 高级程序设计（第三版）
+								</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="picture/xingneng.jpg" class="img-responsive" title="高性能 JavaScript">
+							<div class="carousel-caption">
+								<h4>
+									高性能 JavaScript
+								</h4>
+							</div>
+						</div>
+					</div> 
+					<a class="left carousel-control" href="#carousel-279086" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a> 
+					<a class="right carousel-control" href="#carousel-279086" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+				<ul class="list-group book-ul" id="bookUl">
+					<li>JavaScript DOM编程艺术</li>
+					<li>JavaScript 高级程序设计</li>
+					<li>高 性 能 JavaScript</li>
+				</ul>
+				<small>本站所有共享内容仅限于个人学习使用，不得用于任何商业用途！</small>
+			</div>
+			<!-- 入门推荐 -->
+			<div class="col-md-4">
+				<h3>入门书籍推荐</h3>
+				<h4>HTML5+CSS3从入门到精通</h4>
+				<a href="http://pan.baidu.com/s/1qYa1QFy" target="_blank">pdf版下载地址</a>
+				<p>本书介绍了HTML5和CSS3的基础知识，并且结合了许多的综合实例，是一本适合快速上手的自学教程</p>
+				<h4>JavaScript DOM编程艺术（第二版）</h4>
+				<a href="http://pan.baidu.com/s/1pKF5jzt" target="_blank">pdf版下载地址</a>
+				<p>本书可以让初学JavaScript的你快速了解DOM编程的思路和原则，是一本不可多得的好书。</p>
+				<h4>HTML5移动Web开发实战详解</h4>
+				<a href="http://pan.baidu.com/s/1pKQu7Rt" target="_blank">pdf版下载地址</a>
+				<p>本书由浅入深，全面、系统、详尽地介绍了HTML5相关技术和其在移动开发领域的应用。</p>									
+			</div>
+			<!-- 高级推荐 -->
+			<div class="col-md-4">
+				<h3>高级书籍推荐</h3>
+				<h4>JavaScript 高级程序设计（第三版）</h4>
+				<a href="http://pan.baidu.com/s/1nvofmcx" target="_blank">pdf版下载地址</a>
+				<p>本书非常详细的描述了JavaScript各方面的知识，适合有一定编程经验的开发人员阅读。</p>
+				<h4>高性能 JavaScript</h4>
+				<a href="http://pan.baidu.com/s/1bpgscbX" target="_blank">pdf版下载地址</a>
+				<p>本书介绍了代码加载的最佳方法和编程技巧，帮助你编写更为高效和快速的代码，有性能优化需求的开发人员不可错过。</p>
+				<h4>JavaScript 权威指南（第7版）</h4>
+				<a href="http://pan.baidu.com/s/1dE5aodb" target="_blank">pdf版下载地址</a>
+				<p>本书分为基础知识点介绍和参考指南两部分，可以满足学习基础知识和参考查阅难点的双重需要。</p>									
+			</div>			
+		</div>
+	</div>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src='jquery.cookie.js'></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='gg.js'></script>
+	<script type="text/javascript" src='index.js'></script>
+</body>
+</html>

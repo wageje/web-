@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册页面</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content='width=device-width,initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content="IE=Edge">
+	<link href="http://cdn.gbtags.com/twitter-bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="gg.css">
+	<link rel="stylesheet" type="text/css" href="zhuce.css">
+</head>
+<body>
+	<header class="container-fluid">
+		<!-- 网站标题LOGO -->
+		<div class="row clearfix">
+			<div class="col-xs-12 head-h2" id="headDiv">
+				<h2>
+				<span class="head-sp1" id="headSp1">前</span>
+				<span class="head-sp2" id="headSp2">端</span>
+				<span class="head-sp3" id="headSp3">信</span>
+				<span class="head-sp4" id="headSp4">息</span>
+				<span class="head-sp5" id="headSp5">站</span>
+				</h2>
+			</div>
+		</div>
+		<!-- 导航 -->
+		<div class="row clearfix">
+			<nav class="col-sm-12 column head-nav">
+				<ul class="nav nav-tabs">
+					<li>
+						 <a href="index.html">首页</a>
+					</li>
+					<li>
+						 <a href="#">网站简介</a>
+					</li>
+					<li>
+						 <a href="#">信息</a>
+					</li>
+					<!-- 下拉菜单 -->
+					<li class="dropdown">
+						 <a href="#" data-toggle="dropdown" class="dropdown-toggle dropdown-a">更多<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li>
+								<label for="">CSS框架</label>
+							</li>
+							<li>
+								 <a href="#"></a>
+							</li>
+							</li>
+							<li class="divider">
+							</li>						
+							<li>
+								<label for="">JavaScript框架</label>
+							<li>
+								 <a href="#"></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>				
+		</div>
+	</header>
+	<div class="container" id="register">
+		<form action="" class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="userName" class="col-sm-3 control-label">
+					注册账号
+				</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="userName" placeholder="请输入账号">
+				</div>
+				<span class="col-sm-6 register-sp">由5个以上的英文字母组成</span>
+			</div>
+			<span id="nameSp" class="name-sp"></span>
+			<div class="form-group">
+				<label for="password" class="col-sm-3 control-label">
+					输入密码
+				</label>
+				<div class="col-sm-3">
+					<input type="password" class="form-control" id="password" placeholder="请输入密码">
+					<ul class="pass-ul" id="passUl">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<span class="col-sm-6 register-sp">密码长度必须大于6位</span>
+			</div>
+			<div class="form-group">
+				<label for="password" class="col-sm-3 control-label">
+					再次输入密码
+				</label>
+				<div class="col-sm-3">
+					<input type="password" class="form-control" id="password" placeholder="请输入密码">
+				</div>
+				<span class="col-sm-3"></span>
+			</div>			
+			<span id="passwordSp" class="password-sp"></span>		
+			<div class="form-group">
+				<label for="validateValue" class="col-sm-3 control-label">验证码
+				</label>
+				<div class="col-sm-3">
+					<span class="validate-span" id="validateSpan">
+						<span id="validateSpan1"></span>
+						<span id="validateSpan2"></span>
+						<span id="validateSpan3"></span>
+						<span id="validateSpan4"></span>
+					</span>			
+					<input type="text" class="form-control" id="validateValue" placeholder="请输入验证码">
+				</div>
+			</div>
+			<span id="validateSp" class="validate-sp"></span>
+			<div class="form-group col-sm-9">
+				<button type="button" class="btn btn-default" id="loginBtn">
+					确认注册
+				</button>
+			</div>
+		</form>
+	</div>	
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='gg.js'></script>
+	<script type="text/javascript" src='zhuce.js'></script>
+</body>
+</html>
